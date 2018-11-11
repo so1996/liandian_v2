@@ -167,23 +167,33 @@ html, body {
       float: left;
       position: relative;
       text-align: center;
-      padding-top: 45px; }
+      padding-top: 45px;
+      cursor: pointer; }
+      .section2 .matter .details_2 .statistics:hover i {
+        color: #F16432 !important; }
+      .section2 .matter .details_2 .statistics:hover h3 {
+        color: #F16432 !important; }
+      .section2 .matter .details_2 .statistics:hover p {
+        color: #F16432 !important; }
       .section2 .matter .details_2 .statistics i {
         display: inline-block;
         font-style: oblique;
         font-size: 20px;
         color: #0e1a04;
         position: relative;
-        top: -20px; }
+        top: -20px;
+        transition: all 0.5s; }
       .section2 .matter .details_2 .statistics h3 {
         display: inline-block;
         font-size: 48px;
         font-weight: 900;
         position: relative;
-        color: #0e1a04; }
+        color: #0e1a04;
+        transition: all 0.5s; }
       .section2 .matter .details_2 .statistics p {
         color: #c1c1c1;
-        line-height: 50px; }
+        line-height: 50px;
+        transition: all 0.5s; }
       .section2 .matter .details_2 .statistics .li_top_angle {
         right: 14px;
         top: 0; }
@@ -308,8 +318,8 @@ html, body {
     .section3 .left_3 .t .t-cont {
       height: 365px;
       display: flex;
-      width: 880px;
       float: right;
+      width: 880px;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
@@ -321,7 +331,15 @@ html, body {
         background: #faa635;
         text-align: center;
         line-height: 46px;
-        position: relative; }
+        position: relative;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        cursor: pointer; }
+        .section3 .left_3 .t .t-cont .t-li:hover {
+          -webkit-animation-name: bounce;
+          animation-name: bounce; }
         .section3 .left_3 .t .t-cont .t-li h3 {
           display: inline-block;
           font-size: 20px;
@@ -348,13 +366,24 @@ html, body {
           text-transform: uppercase;
           font-family: monospace; }
   .section3 .left_3 .b {
-    height: 306px; }
+    height: 306px;
+    width: 518px;
+    float: right;
+    margin-right: -1px; }
     .section3 .left_3 .b .b-img {
-      float: right; }
+      float: right;
+      overflow: hidden;
+      position: relative; }
+      .section3 .left_3 .b .b-img img {
+        transform: scale(1.2);
+        transition: all 1.5s;
+        transform-origin: center;
+        display: none; }
 .section3 .right_3 {
   width: 50%;
   background: #fff;
-  float: right; }
+  float: right;
+  overflow: hidden; }
   .section3 .right_3 .t {
     margin-top: 38px;
     border-top: 1px solid #dedede;
@@ -381,6 +410,11 @@ html, body {
     padding-left: 115px;
     background: #000;
     position: relative; }
+    .section3 .right_3 .b .right_3_b {
+      transform: scale(1.2);
+      transform-origin: center;
+      transition: all 1.5s;
+      display: none; }
     .section3 .right_3 .b .b-cont {
       padding-top: 75px;
       position: relative;
@@ -419,7 +453,8 @@ html, body {
     padding-left: 240px;
     height: 100%;
     background: #fff;
-    position: relative; }
+    position: relative;
+    border-bottom: 1px solid #e0e0e0; }
     .section4 .left_4 .found-fr img {
       vertical-align: initial; }
     .section4 .left_4 .found-fr .bulidslick {
@@ -494,6 +529,13 @@ html, body {
 .section4 .right_4 {
   width: 50%;
   float: right; }
+  .section4 .right_4 .slideshow {
+    overflow: hidden;
+    position: relative; }
+    .section4 .right_4 .slideshow img {
+      transform: scale(1.2);
+      transition: all 1.5s;
+      display: none; }
 
 .section5 .matter {
   padding: 0 80px;
@@ -528,6 +570,18 @@ html, body {
       text-align: center;
       line-height: 45px;
       width: 100%; }
+
+.zhez {
+  width: 100%;
+  height: 300%;
+  background: #fff;
+  transform: rotateZ(-25deg);
+  transform-origin: left bottom;
+  position: absolute;
+  top: -35%;
+  left: 115%;
+  display: none;
+  transition: all 1.5s; }
 
 footer .matter {
   height: 250px;
