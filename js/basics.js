@@ -9,7 +9,8 @@
     var section3 = $(".section3");
     var section4 = $(".section4");
 
-    var statis_24 = $(".statis_24"), statis_500 = $(".statis_500"), statis_30 = $(".statis_30"), statis_600 = $(".statis_600");
+    var statis_24 = $(".statis_24"), statis_500 = $(".statis_500"), statis_30 = $(".statis_30"),
+        statis_600 = $(".statis_600");
     var start_animate = $(".start-animate");
 
     function startAnimate() {
@@ -30,22 +31,22 @@
         var slideshow = $(".slideshow");
 
         if (b_img.offset().top - windowScroll < windowHeight - 50) {
-            b_img.find("img").css({display:"block"});
             b_img.find(".zhez").css({display: "block"});
+            b_img.find("img").css({display: "block"});
         }
         if (b_img.offset().top - windowScroll < windowHeight - 60) {
             b_img.find("img").css({transform: "scale(1)"});
             b_img.find(".zhez").css({transform: "rotateZ(0deg)"});
         }
         if (right_3_b.offset().top - windowScroll < windowHeight - 50) {
-            right_3_b.css({display:"block"});
+            right_3_b.css({display: "block"});
         }
         if (right_3_b.offset().top - windowScroll < windowHeight - 50) {
             right_3_b.css({transform: "scale(1)"});
         }
         if (slideshow.offset().top - windowScroll < windowHeight - 50) {
-            slideshow.find("img").css({display:"block"});
             slideshow.find(".zhez").css({display: "block"});
+            slideshow.find("img").css({display: "block"});
         }
         if (slideshow.offset().top - windowScroll < windowHeight - 60) {
             slideshow.find("img").css({transform: "scale(1)"});
@@ -118,4 +119,27 @@
             }
         }, time);
     }
+
+    var kh_ul = $(".kh_ul");
+    var kh_li = parseInt(kh_ul.find("li").css("height"));
+    $(".upPage").on("click", function () {
+        var kh_top = parseInt(kh_ul.css("top"));
+
+        if (kh_top < (kh_ul.height()+kh_li)) {
+            kh_ul.css("top", -kh_ul.height()+kh_li+"px");
+            return;
+        }
+
+        kh_ul.css("top", kh_top - kh_li + "px");
+    });
+    $(".belowPage").on("click", function () {
+        var kh_top = parseInt(kh_ul.css("top"));
+
+        if (kh_top <= 0) {
+            kh_ul.css("top", 0);
+            return;
+        }
+
+        kh_ul.css("top", kh_top + kh_li + "px");
+    });
 })($);

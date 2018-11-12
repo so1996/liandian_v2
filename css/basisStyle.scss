@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-html,body {
+html, body {
   animation: all 1s ease;
 }
 
@@ -61,14 +61,14 @@ html,body {
       display: block;
       position: absolute;
       left: 50%;
-      transform: translate(-50%,0);
+      transform: translate(-50%, 0);
     }
     .bg-img-veil {
       width: auto;
       position: absolute;
       bottom: 0;
       left: 50%;
-      transform: translate(-50%,340px);
+      transform: translate(-50%, 340px);
     }
   }
 
@@ -227,16 +227,15 @@ html,body {
         padding-top: 45px;
         cursor: pointer;
 
-        &:hover i{
+        &:hover i {
           color: #F16432 !important;
         }
-        &:hover h3{
+        &:hover h3 {
           color: #F16432 !important;
         }
-        &:hover p{
+        &:hover p {
           color: #F16432 !important;
         }
-
 
         i {
           display: inline-block;
@@ -271,7 +270,6 @@ html,body {
       }
     }
   }
-
 
   .li_top_angle {
     position: absolute;
@@ -442,7 +440,6 @@ html,body {
             color: #fff;
             position: relative;
             z-index: 1;
-            font-family: serif;
           }
           span {
             position: absolute;
@@ -462,7 +459,6 @@ html,body {
             transform: translateX(-50%);
             white-space: nowrap;
             text-transform: uppercase;
-            font-family: monospace;
           }
         }
       }
@@ -476,6 +472,32 @@ html,body {
         float: right;
         overflow: hidden;
         position: relative;
+
+        &:hover .about {
+          left: -105px;
+          bottom: -95px;
+        }
+
+        .about {
+          width: 400px;
+          height: 200px;
+          background: #E9E9E9;
+          text-align: center;
+          transform: rotateZ(30deg);
+          position: absolute;
+          transition: all 1s;
+          bottom: -300px;
+          left: -450px;
+
+          .us {
+            color: #000;
+            text-transform: capitalize;
+            display: block;
+            font-size: 30px;
+            font-weight: 700;
+            transform: rotateZ(-30deg) translate(-30px, 22px);
+          }
+        }
 
         img {
           transform: scale(1.2);
@@ -567,7 +589,7 @@ html,body {
       .bg {
         width: 385px;
         height: 205px;
-        background: url("../images/v2_3.png")no-repeat;
+        background: url("../images/v2_3.png") no-repeat;
         position: absolute;
         top: 25px;
         left: 300px;
@@ -691,7 +713,11 @@ html,body {
       overflow: hidden;
       position: relative;
 
-      img{
+      &:hover img {
+        transform: scale(1.1) !important;
+      }
+
+      img {
         transform: scale(1.2);
         transition: all 1.5s;
         display: none;
@@ -709,6 +735,29 @@ html,body {
     align-items: center;
     background: #fff;
     height: 360px;
+
+    .kh {
+      height: 170px;
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+
+      .kh_ul {
+        transition: all 1s;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .kh_li {
+        width: 100%;
+        height: 170px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        float: left;
+      }
+    }
 
     .client {
       h2 {
@@ -731,6 +780,15 @@ html,body {
         text-align: center;
         line-height: 45px;
         width: 100%;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+          background: #E9E9E9;
+        }
+        &:active {
+          background: #faa635;
+        }
       }
       .belowPage {
         height: 45px;
@@ -740,6 +798,14 @@ html,body {
         text-align: center;
         line-height: 45px;
         width: 100%;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          background: #E9E9E9;
+        }
+        &:active {
+          background: #f26532;
+        }
       }
     }
   }
@@ -944,6 +1010,7 @@ footer {
     transform: translateX(0);
   }
 }
+
 @keyframes xz1 {
   0% {
     transform: translateX(400%) rotateZ(360deg);
@@ -952,6 +1019,7 @@ footer {
     transform: translateX(0) rotateZ(0deg);
   }
 }
+
 @keyframes xz2 {
   0% {
     transform: translateX(300%) rotateZ(300deg);
@@ -960,6 +1028,7 @@ footer {
     transform: translateX(0) rotateZ(0deg);
   }
 }
+
 @keyframes xz3 {
   0% {
     transform: translateX(200%) rotateZ(240deg);
@@ -968,6 +1037,7 @@ footer {
     transform: translateX(0) rotateZ(0deg);
   }
 }
+
 @keyframes xz4 {
   0% {
     transform: translateX(100%) rotateZ(180deg);
@@ -994,6 +1064,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 @keyframes yw2 {
   0% {
     transform: translateY(300%);
@@ -1002,6 +1073,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 @keyframes yw3 {
   0% {
     transform: translateY(300%);
@@ -1010,6 +1082,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 @keyframes yw4 {
   0% {
     transform: translateY(300%);
@@ -1018,6 +1091,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 @keyframes yw5 {
   0% {
     transform: translateY(200%);
@@ -1026,6 +1100,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 @keyframes yw6 {
   0% {
     transform: translateY(200%);
@@ -1034,6 +1109,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 @keyframes yw7 {
   0% {
     transform: translateY(200%);
@@ -1121,8 +1197,6 @@ footer {
     animation: yw7 1s ease 1.4s forwards;
   }
 }
-
-
 
 //.section2 {
 //  position: relative;
