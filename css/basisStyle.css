@@ -11,6 +11,7 @@ html, body {
   right: 0;
   top: 50%;
   transform: translate(100%, -50%);
+  border: 1px solid #f1f1f1;
   z-index: 100;
   transition: all 0.5s ease; }
   .g_senav .g_senitm {
@@ -374,13 +375,13 @@ html, body {
       position: relative; }
       .section3 .left_3 .b .b-img:hover .about {
         left: -105px;
-        bottom: -95px; }
+        bottom: -130px; }
       .section3 .left_3 .b .b-img .about {
         width: 400px;
         height: 200px;
         background: #E9E9E9;
         text-align: center;
-        transform: rotateZ(30deg);
+        transform: rotateZ(20deg);
         position: absolute;
         transition: all 1s;
         bottom: -300px;
@@ -391,7 +392,7 @@ html, body {
           display: block;
           font-size: 30px;
           font-weight: 700;
-          transform: rotateZ(-30deg) translate(-30px, 22px); }
+          transform: rotateZ(-20deg) translate(-30px, 12px); }
       .section3 .left_3 .b .b-img img {
         transform: scale(1.2);
         transition: all 1.5s;
@@ -645,7 +646,7 @@ footer .matter {
       footer .matter .contactWay li img {
         display: inline-block; }
       footer .matter .contactWay li span {
-        color: #837985;
+        color: #cacaca;
         display: inline-block;
         padding-left: 25px; }
   footer .matter .datum {

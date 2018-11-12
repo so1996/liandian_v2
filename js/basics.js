@@ -78,7 +78,7 @@
             $(".g_senav").css({transform: "translate(100%, -50%)"});
         }
 
-        if (windowScroll > 400) {
+        if (windowScroll > 900) {
             $(".bg-txt").css({opacity: 0});
             $(".head").css({background: "rgba(145, 145, 145, 0.5)"});
             $(".head li").css("height", "0.8rem");
@@ -122,7 +122,7 @@
 
     var kh_ul = $(".kh_ul");
     var kh_li = parseInt(kh_ul.find("li").css("height"));
-    $(".upPage").on("click", function () {
+    $(".belowPage").on("click", function () {
         var kh_top = parseInt(kh_ul.css("top"));
 
         if (kh_top < (kh_ul.height()+kh_li)) {
@@ -132,7 +132,7 @@
 
         kh_ul.css("top", kh_top - kh_li + "px");
     });
-    $(".belowPage").on("click", function () {
+    $(".upPage").on("click", function () {
         var kh_top = parseInt(kh_ul.css("top"));
 
         if (kh_top <= 0) {
