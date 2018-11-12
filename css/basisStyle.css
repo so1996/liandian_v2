@@ -315,7 +315,7 @@ html, body {
   background: #fff;
   float: left; }
   .section3 .left_3 .t {
-    background: #f26532; }
+    background: url(../images/xm_bg.png) no-repeat 100%; }
     .section3 .left_3 .t .t-cont {
       height: 365px;
       display: flex;
@@ -357,7 +357,7 @@ html, body {
           font-weight: 900; }
         .section3 .left_3 .t .t-cont .t-li p {
           font-size: 12px;
-          color: #fff;
+          color: #f26532;
           position: absolute;
           bottom: -40px;
           left: 50%;
